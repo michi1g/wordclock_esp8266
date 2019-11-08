@@ -253,4 +253,20 @@ static inline void LedSetZwoelfHour(uint8 hard){
     LedSetStatusMatrix(5, 6, mode);
     LedSetStatusMatrix(5, 7, mode);
 }
+static inline void LedSetHappyBirthday(uint8 hard){
+    uint8 mode = hard ? LED_STATIS_ON : LED_STATIS_FADEIN;
+    LedSetStatusMatrix(3, 3, mode);
+    LedSetStatusMatrix(3, 4, mode);
+    LedSetStatusMatrix(3, 5, mode);
+    LedSetStatusMatrix(3, 6, mode);
+    LedSetStatusMatrix(3, 7, mode);
+    LedSetStatusMatrix(4, 3, mode);
+    LedSetStatusMatrix(4, 4, mode);
+    LedSetStatusMatrix(4, 5, mode);
+    LedSetStatusMatrix(4, 6, mode);
+    LedSetStatusMatrix(4, 7, mode);
+    LedSetStatusMatrix(4, 8, mode);
+    LedSetStatusMatrix(4, 9, mode);
+    LedSetStatusMatrix(4, 10, mode);
+}
 #endif
