@@ -19,7 +19,7 @@
 #define LED_PIXEL_TYP       NeoGrbFeature //(NeoBrgFeature,NeoRgbFeature,NeoRbgFeature,NeoGrbFeature)
 #define LED_PIXEL_METHOD    NeoEsp8266Dma800KbpsMethod
 
-#define LED_LAYOUT          1  // 0: RADIG; 1: IKEAHACKER; 2: Mikrocontroller.net
+#define LED_LAYOUT          2  // 0: RADIG; 1: IKEAHACKER; 2: Mikrocontroller.net
 
 struct LedObject {
     uint8 r = 0;
@@ -60,7 +60,7 @@ extern uint8        LedIsDirty();
 #elif LED_LAYOUT == 1
     #include "leds_ikeahackers.h"
 #elif LED_LAYOUT == 2
-    #include "leds_mikrocontroller.h"
+    #include "leds_myconfig.h"
 #endif
 
 #endif
